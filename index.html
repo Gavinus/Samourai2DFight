@@ -5,29 +5,58 @@
     <link href="./css/index.css" rel="stylesheet"> 
 </head>
 <body>
-    <div class="bodyCanvas">
 
-        <!-- Health bar Player - Enemy -->
-        <div class="healthBarre">
+    <div class="bodyContainer">
+        <div class="bodyCanvas">
 
-            <!-- heal player -->
-            <div class="healthPlayer">
-                <div class="healthPlayerBarre"></div>
-                <div id="playerHealth" class="playerHealth"></div>
+            <!-- Health bar Player - Enemy -->
+            <div class="healthBarre">
+
+                <!-- heal player -->
+                <div class="healthPlayer">
+                    <div class="healthPlayerBarre"></div>
+                    <div id="playerHealth" class="playerHealth"></div>
+                </div>
+
+                <!-- timer  -->
+                <div id="timer" class="timerBloc"></div>
+                
+                <!-- heal enemy -->
+                <div class="healthEnemy">
+                    <div class="healthEnemyBarre"></div>
+                    <div id="enemyHealth" class="enemyHealth"></div>
+                </div>
             </div>
 
-            <!-- timer  -->
-            <div id="timer" class="timerBloc"></div>
-            
-            <!-- heal enemy -->
-            <div class="healthEnemy">
-                <div class="healthEnemyBarre"></div>
-                <div id="enemyHealth" class="enemyHealth"></div>
-            </div>
+            <!-- show comment -->
+            <div class="comment" id="comment"></div>
+
+            <canvas></canvas>
         </div>
-        <div class="comment" id="comment"></div>
-        <canvas></canvas>
+        <div class="blocBottom">
+            <div class="presentation">
+                <h1>Hi!!! Here it's a basic game for 2 players</h1>
+                <h2>(Refresh for restart)</h2>
+            </div>
+            <div class="command">
+                <div class="commandPlayer">
+                    <h1>Command Player 1</h1>
+                    <h2>Right -> "d"</h2>
+                    <h2>Left -> "q"</h2>
+                    <h2>Jump -> "z"</h2>
+                    <h2>Attack -> "space"</h2>
+                </div>
+                <div class="commandEnemy">
+                    <h1>Command Player 2</h1>
+                    <h2>Right -> "ArrowRight"</h2>
+                    <h2>Left -> "ArrowLeft"</h2>
+                    <h2>Jump -> "ArrowUp"</h2>
+                    <h2>Attack -> "ArrowDown"</h2>
+                </div>
+            </div>
+        </div>    
     </div>
+
         <!-- gsap cdn , bibliotheque animation opensource / celui ci pour la réduction life bar  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" 
         integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" 
@@ -37,4 +66,6 @@
     <script src="./js/utils.js"></script>
     <script src="./js/classes.js"></script>
     <script src="index.js"></script>
+
+
 </body>
