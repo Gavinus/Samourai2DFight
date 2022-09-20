@@ -1,0 +1,40 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="./css/index.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="bodyCanvas">
+
+        <!-- Health bar Player - Enemy -->
+        <div class="healthBarre">
+
+            <!-- heal player -->
+            <div class="healthPlayer">
+                <div class="healthPlayerBarre"></div>
+                <div id="playerHealth" class="playerHealth"></div>
+            </div>
+
+            <!-- timer  -->
+            <div id="timer" class="timerBloc"></div>
+            
+            <!-- heal enemy -->
+            <div class="healthEnemy">
+                <div class="healthEnemyBarre"></div>
+                <div id="enemyHealth" class="enemyHealth"></div>
+            </div>
+        </div>
+        <div class="comment" id="comment"></div>
+        <canvas></canvas>
+    </div>
+        <!-- gsap cdn , bibliotheque animation opensource / celui ci pour la réduction life bar  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" 
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
